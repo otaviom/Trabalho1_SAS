@@ -1,0 +1,9 @@
+- Um sitema de recebimento e envio de email para agentes e servidores.
+- Cada sistema de agentes tem sua própria chave pública e privada, e conhece a chave pública do servidor;
+- O sistema dos agentes não guardam mensagens. Logo após serem visualizadas ou envidas, são excluidas; 
+- Cada agente possui três senhas de acesso:
+	1) Acessa o sistema do agente normalmente;
+	2) Uma envia automaticamente um email ao servidor informando o comprometimento do sistema do agente;
+	3) Uma para acesso ao sistema em equipamentos não seguros (via web - recebe uma outra
+	senha quando a comunicação é realizada por meios não confiáveis);  
+- O sistema do servidor conhece as chaves públicas e privadas do sistema de todos os agentes;
