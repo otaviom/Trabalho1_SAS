@@ -15,5 +15,4 @@ def cript_RSA(object):
 
     print (publickey)
 
-
-cript_RSA("ola")
+print ("balablabal")
