@@ -4,7 +4,16 @@ def calculateMD5(msg):
     md5.update(msg.encode())
     return md5.hexdigest()
 
+def cript_RSA(object):
+    from Crypto import random
+    from Crypto.PublicKey import RSA
 
-msg = input("Digite a mensagem: ")
+    random_generator = Random.new().read
+    key = RSA.generate(1024, random_generator) #generate public and private keys
 
-print(calculateMD5(msg))
+    publickey = key.publickey # pub key export for exchange
+
+    print (publickey)
+
+
+cript_RSA("ola")
