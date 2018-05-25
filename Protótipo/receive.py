@@ -1,3 +1,10 @@
+def remove_message():
+    import os
+    dir = os.listdir('arquivos')
+    for file in dir:
+        os.remove('arquivos/' + file)
+    print('Arquivos de mensagem apagados.')
+
 def calculateMD5(msg):
     import hashlib
     md5 = hashlib.md5()
@@ -35,9 +42,9 @@ def confirm_hash(msg):
         return False
 
 #------------------------------------------------------------------------------#
-
-message = decrypt()
-if confirm_hash(message):
-    print ('Mensagem não comprometida: "' + message + '"')
-else:
-    print ('Mensagem comprometida: "' + message + '"')
+def read_message():
+    message = decrypt()
+    if confirm_hash(message):
+        print ('Mensagem não comprometida (hash confirmado): "' + message + '"')
+    else:
+        print ('Mensagem comprometida (hash não confirmado): "' + message + '"')

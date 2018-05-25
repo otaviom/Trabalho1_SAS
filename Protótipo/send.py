@@ -41,17 +41,10 @@ def encrypt(data, type='message'):
     [file_out.write(x) for x in (enc_session_key, cipher_aes.nonce, tag, ciphertext)]
 
 #-------------------------------------------------------------------------------#
-
-option = input('1. Enviar mensagem;\n2. Gerar par de chaves;\nOpção: ')
-
-if option == '2':
-    generate_keys()
-elif option == '1':
+def generate_message():
     message = input("Digite a mensagem a ser enviada: ")
 
     calculateMD5(message)
     encrypt(message)
 
     print ('Mensagem devidamente criptografada e pronta para ser enviada.')
-else:
-    print('Opção Inválida')
