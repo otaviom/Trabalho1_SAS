@@ -1,0 +1,5 @@
+O arquivo a ser executado é: "prototipo.py"
+O protótipo simula a geração da mensagem criptografada e da respectiva hash, além da leitura e confimação dos mesmos.
+O aspecto de envio do e-mail não foi implementado, e seria dado pela utilização do SMTP.
+Foi incluída uma função para gerar chaves apenas para o teste da criptografia, visto que o sistema será baixado já com as chaves predefinidas.
+Em termos práticos a funcionalidade de apagar os arquivos seria aplicada automaticamente, porém é necessário deixa-los intactos para testar a sua escrita e leitura.
