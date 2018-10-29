@@ -6,8 +6,6 @@
 
 Links úteis:
 
-https://www.portugal-a-programar.pt/forums/topic/19899-python-python-criptografia/
-
 https://pt.wikipedia.org/wiki/RSA
 
 https://pt.wikipedia.org/wiki/Advanced_Encryption_Standard
